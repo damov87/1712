@@ -1,0 +1,61 @@
+.main {
+	width: 800px;
+}
+
+.img {
+	margin-left: 20px;
+}
+
+.title {
+	color: green;
+	float: left;
+	font-family: 'Monotype Corsiva'; 
+	margin: 70px 0 0 60px;
+}
+
+.socials {
+	float: left;
+	margin: 145px 0px 0px -185px;
+}
+
+.socials2 {
+	float: left;
+	margin: 145px 0px 0px -155px;
+}
+
+.p1 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+
+.p2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: -116px 0px 0px 300px;
+}
+
+.li1 {
+	font-family: verdana;
+	margin-left: 50px;
+}
+
+.li2 {
+	font-family: verdana;
+	margin: 0px 0px 0px 300px;
+}
+
+.p3 {
+	font-size: 20px;
+	margin-left: 0px;
+}
+
+.p4 {
+	font-size: 20px;
+	margin-left: 0px;
+	padding-left: 20px;
+}
+
+.li3 {
+	font-family: verdana;
+}

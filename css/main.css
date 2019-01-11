@@ -2,7 +2,7 @@
     font-family: Roboto, sans-serif;
 }
 body {
-	background-image: url("/img/bg-lightl-904.jpg");
+	background-image: url("../img/bg-lightl-904.jpg");
 }
 .center {
 	text-align: center;

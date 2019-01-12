@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link href='css/main.css' rel='stylesheet' type='text/css'>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+	<a class="home" href="../../index.html">На главную</a>
+	<a class="home" style="margin-top: 75px" href="../index.html">Без Bootstrap</a>
+  	<div class="container">
+		<br>
+		<form method='post' action="">
+		  <div class="form-group row">
+		    <label for="form_name" class="col-sm-1 col-form-label">ФИО:</label>
+		    <div class="col-sm-11">
+		      <input type="text" class="form-control" id="form_name" name='name' placeholder="Василий Иванович Петренко">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="email" class="col-sm-1 col-form-label">E-mail:</label>
+		    <div class="col-sm-11">
+		      <input type="email" class="form-control" id="email" name='email' placeholder="Введите Вашу электронную почту">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="form_password" class="col-sm-1 col-form-label">Пароль:</label>
+		    <div class="col-sm-11">
+		      <input type="password" class="form-control" id="form_password" name='password' placeholder="Введите пароль">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="form_phone" class="col-sm-1 col-form-label">Телефон:</label>
+		    <div class="col-sm-11">
+		      <input type="text" class="form-control" id="form_phone" placeholder="Введите телефон" name='phone' pattern="^[ 0-9]+$" title="Поле телефон должно содержать только цифры">
+		    </div>
+		  </div>
+
+		  <label for='skills'>Знания: </label><br>
+		  <div class="custom-control custom-checkbox">
+			  <input class="custom-control-input" type="checkbox" name="skills" id="PHP" value="PHP">
+			  <label class="custom-control-label" for="PHP">PHP</label>
+		  </div>
+		  <div class="custom-control custom-checkbox">
+			  <input class="custom-control-input" type="checkbox" name="skills" id="MySQL" value="MySQL">
+			  <label class="custom-control-label" for="MySQL">MySQL</label>
+		  </div>
+		  <div class="custom-control custom-checkbox">
+			  <input class="custom-control-input" type="checkbox" name="skills" id="Java" value="Java">
+			  <label class="custom-control-label" for="Java">Java</label>
+		  </div>
+		  <br>
+  		  <fieldset class="form-group">
+		    <label for='gender'>Пол: </label><br>
+		    <div class="custom-control custom-radio">
+			  <input type="radio" id="gender1" name="gender" class="custom-control-input" value="men" required>
+			  <label class="custom-control-label" for="gender1">Мужской</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="gender2" name="gender" class="custom-control-input" value="women">
+			  <label class="custom-control-label" for="gender2">Женский</label>
+			</div>
+		  </fieldset>
+		  <fieldset class="form-group">
+		    <label for='transport'>Предпочитаемый транспорт: </label><br>
+		    <div class="custom-control custom-radio">
+			  <input type="radio" id="transport1" name="transport" class="custom-control-input" value="public">
+			  <label class="custom-control-label" for="transport1">Общественный</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="transport2" name="transport" class="custom-control-input" value="car">
+			  <label class="custom-control-label" for="transport2">Личная машина</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="transport3" name="transport" class="custom-control-input" value="bycicle" checked>
+			  <label class="custom-control-label" for="transport3">Велосипед</label>
+			</div>
+		  </fieldset>
+  		  <fieldset class="form-group">
+		    <label for='education'>Образование: </label><br>
+		    <div class="custom-control custom-radio">
+			  <input type="radio" id="education1" name="education" class="custom-control-input" value="school">
+			  <label class="custom-control-label" for="education1">Школа</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="education2" name="education" class="custom-control-input" value="university1">
+			  <label class="custom-control-label" for="education2">Университет (бакалавр)</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="education3" name="education" class="custom-control-input" value="university2">
+			  <label class="custom-control-label" for="education3">Университет (специалист)</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="education4" name="education" class="custom-control-input" value="university3">
+			  <label class="custom-control-label" for="education4">Университет (магистр)</label>
+			</div>
+		  </fieldset>
+		  <select class="custom-select margin" name="work" id="work">
+			  <option value="0" selected>Предпочтение работы:</option>
+			  <option value="office">В офисе</option>
+			  <option value="remotely">Удаленно</option>
+			  <option value="trip">Командировки</option>
+		  </select>
+		  <select class="custom-select margin" name="color" id="color" size="8" multiple>
+			   <optgroup label="Любимый цвет">
+			    <option value="c1">Апельсиновый</option>
+			    <option value="c2">Лимонный</option>
+			    <option value="c3">Персиковый</option>
+			   </optgroup>
+			   <optgroup label="Тон">
+			    <option value="s1">Светлый</option>
+			    <option value="s2">Нормальный</option>
+			    <option value="s3">Темный</option>
+			   </optgroup>
+		  </select>
+		  <div class="custom-control custom-checkbox">
+			  <input type="checkbox" class="custom-control-input" id="news" checked="checked" disabled>
+			  <label class="custom-control-label" for="news">Подписаться на новости</label>
+		  </div>
+		  <div class="custom-file margin">
+			  <input type="file" class="custom-file-input" id="img" name="img" accept="image/png, image/jpeg" multiple>
+			  <label class="custom-file-label" for="customFile">Выберите фотографии для загрузки</label>
+		  </div>
+		  <div class="custom-file margin">
+			  <input type="file" class="custom-file-input" id="avatar" name="avatar" accept="image/png, image/jpeg">
+			  <label class="custom-file-label" for="customFile">Выберите свой аватар</label>
+		  </div>
+		  <div class="form-group row">
+		    <div class="col-sm-10">
+		      <button type="submit" class="btn btn-primary">Отправить анкету</button>
+		    </div>
+		  </div>
+		</form>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

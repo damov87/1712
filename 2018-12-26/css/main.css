@@ -48,3 +48,11 @@ a.linked:hover {
     font-family: 'Monotype Corsiva', serif;
     margin: 20px;
 }
+
+.img {
+    opacity: 0.6;
+}
+
+.img:hover {
+    opacity: 1.0;
+}

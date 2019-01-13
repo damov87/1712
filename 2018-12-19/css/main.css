@@ -57,6 +57,12 @@ a.linked:hover {
     opacity: 0.6;
 }
 
+.img:hover {
+    margin-left: 20px;
+    margin-top: 20px;
+    opacity: 1.0;
+}
+
 .title {
     color: green;
     float: left;

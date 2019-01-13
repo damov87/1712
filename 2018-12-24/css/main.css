@@ -1,0 +1,79 @@
+.home {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    border: 1px solid #1eb80b;
+    font-family: verdana, serif;
+    margin-top: 20px;
+    z-index: 1000;
+}
+.home:hover {
+    background: #8db80b66;
+}
+.form-row {
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.form-row input {
+	float: right;
+	height: 19px;
+	line-height: 19px;
+	margin: 0px;
+	padding: 0px 5px;
+	width: 287px;
+	border: 1px solid #ABADB3;
+}
+
+.reg-form {
+	width: 416px;
+	margin: 0 auto;
+}
+
+.form-row textarea {
+	height: 90px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px 5px;
+    width: 404px;
+    border: 1px solid #ABADB3;
+}
+
+.form-row input[type=submit] {
+	padding:5px;
+	height:25px;
+	width:100%;
+	line-height: 10px;
+	background: #337AB7;
+	color:white;
+}
+
+.form-row input[type=submit]:hover {
+	background:#286090;
+}
+
+* {
+	font-family:arial;
+	font-size:10pt;
+}
+
+.about {
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.radio {
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.select {
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.file {
+	margin-top: 8px;
+	overflow: hidden;
+}

@@ -1,0 +1,50 @@
+.home {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    border: 1px solid #1eb80b;
+    font-family: verdana, serif;
+    margin-top: 20px;
+    z-index: 1000;
+}
+.home:hover {
+    background: #8db80b66;
+}
+
+a.fb {
+    background: url(../../2018-12-19/img/facebook.png); /* Путь к файлу с исходным рисунком  */
+    display: inline-block; /*  Рисунок как блочный элемент */
+    width: 24px; /* Ширина рисунка */
+    height: 24px; /*  Высота рисунка */
+}
+a.fb:hover {
+    background: url(../../2018-12-19/img/facebook2.png); /* Путь к файлу с заменяемым рисунком  */
+}
+
+a.linked {
+    background: url(../../2018-12-19/img/linkedin.png); /* Путь к файлу с исходным рисунком  */
+    display: inline-block; /*  Рисунок как блочный элемент */
+    width: 24px; /* Ширина рисунка */
+    height: 24px; /*  Высота рисунка */
+}
+a.linked:hover {
+    background: url(../../2018-12-19/img/linkedin2.png); /* Путь к файлу с заменяемым рисунком  */
+}
+
+.social {
+    position: absolute;
+    right: 270px;
+    top: 83px;
+}
+
+.row--mod {
+    position: relative;
+}
+
+.title {
+    color: green;
+    font-family: 'Monotype Corsiva', serif;
+    margin: 20px;
+}

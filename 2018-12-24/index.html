@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <link href='css/main.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<a class="home" href="../index.html">На главную</a>
+	<a class="home" style="margin-top: 75px" href="BS/index.html">С использованием Bootstrap</a>
+	<form method='post' class='reg-form' action="cv-form.php">
+
+		<div class='form-row'>
+			<label for='form_fname'>ФИО: </label>
+    		<input type='text' id='form_fname' name='name' placeholder="Василий Иванович Петренко" >
+  		</div>
+
+		<div class='form-row'>
+			<label for='form_email'>E-mail: </label>
+			<input type='email' id='form_email' name='email' placeholder="Введите Вашу электронную почту">
+		</div>
+
+		<div class='form-row'>
+			<label for='password'>Пароль: </label>
+			<input type='password' id='form_password' name='password' required="required" placeholder="Введите пароль">
+		</div>
+
+		<div class='form-row'>
+			<label for='form_phone'>Телефон: </label>
+			<input type='text' id='form_phone' name='phone' placeholder="Введите телефон">
+		</div>
+
+		<div>
+			<label for='skills'>Знания: </label><br>
+			<input type="checkbox" name="skills" value="PHP"> PHP<br>
+  			<input type="checkbox" name="skills" value="MySQL"> MySQL<br>
+  			<input type="checkbox" name="skills" value="Java"> Java
+		</div>
+
+		<div class='radio'>
+		<label for='gender'>Пол: </label><br>
+		<input type="radio" name="gender" value="male" required> Мужской<br>
+		<input type="radio" name="gender" value="female"> Женский<br>
+		</div>
+
+		<div class='radio'>
+		<label for='transport'>Предпочитаемый транспорт: </label><br>
+		<input type="radio" name="transport" value="public" checked="checked"> Общественный<br>
+        <input type="radio" name="transport" value="car"> Личная машина<br>
+        <input type="radio" name="transport" value="bycicle"> Велосипед<br>
+		</div>
+
+		<div class='radio'>
+		<label for='education'>Образование: </label><br>
+		<input type="radio" name="education" value="school"> Школа<br>
+        <input type="radio" name="education" value="university1"> Университет (бакалавр)<br>
+        <input type="radio" name="education" value="university2"> Университет (специалист)<br>
+        <input type="radio" name="education" value="university3"> Университет (магистр)<br>
+		</div>
+
+		<div class='select'>
+		<label for='work'>Предпочтение работы: </label><br>
+		<select name="work" id="work">
+		  <option value="office">В офисе</option>
+		  <option value="remotely">Удаленно</option>
+		  <option value="trip">Командировки</option>
+		</select>
+		</div>
+
+		<div class='select'>
+		<label for='color'>Любимый цвет: </label><br>
+		<select size="8" multiple="multiple" name="color" id="color">
+		   <optgroup label="Цвет">
+		    <option value="c1">Апельсиновый</option>
+		    <option value="c2">Лимонный</option>
+		    <option value="c3">Персиковый</option>
+		   </optgroup>
+		   <optgroup label="Тон">
+		    <option value="s1">Светлый</option>
+		    <option value="s2">Нормальный</option>
+		    <option value="s3">Темный</option>
+		   </optgroup>
+		</select>
+		</div>
+
+		<div class='file'>
+		<label for="avatar">Загрузить фото для аватара:</label>
+		<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+		</div>
+
+		<div class='file'>
+		<label for="avatar">Добавьте Ваши фото:</label>
+        <input type="file" name="img" accept="image/png, image/jpeg" multiple>
+		</div>
+
+		<div class='form-row about'>
+			<label for='form_about'>Расскажите о себе: </label>
+			<textarea id='form_about' name='about'></textarea>
+		</div>
+
+		<div>
+		<input type="checkbox" name="news" id="news" value="1" style="margin-bottom: 10px" checked="checked" disabled> Подписаться на новости<br>
+		</div>
+
+		<input type="hidden" name="userid" value="newID"/>
+
+		<div class="form-row">
+			<input type="submit" value='Отправить анкету'>
+		</div>
+
+	</form>
+
+</body>
+
+</html>

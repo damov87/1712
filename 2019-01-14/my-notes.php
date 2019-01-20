@@ -1,5 +1,136 @@
 <?php
 
+// function sumOfSeries($int1, $int2)
+// {
+// $result = 0;
+//     for ($a = $int1; $a <= $int2; $a++) {
+//         $result = $result + $a;
+//     }
+//     return $result;
+// 
+// echo sumOfSeries(1,8);
+
+// function doesContain($str, $char)
+// {
+//     $index = 0;
+//     while ($index < strlen($str)) {
+//         if ($str[$index] === $char) {
+//             return true;
+//         }
+
+//         $index++;
+//     }
+
+//     return false;
+// }
+
+// function doesContain($str, $char)
+// {
+//     $pos = strpos($str, $char);
+//     $rest = substr($str, $pos, 1);
+
+//     if ($rest === $char) {
+//     return true;
+// } else {
+//     return false;
+// }
+// }
+// echo doesContain($str, 'I');
+
+// $str = 'diablo';
+// $char = 'b';
+// $pos = strpos($str, $char);
+// $rest = substr($str, $pos, 1);
+// echo $rest;
+
+// function filterString($str, $char)
+// {
+//     $index = 0;
+//     $length = strlen($str);
+//     $result = '';
+//     while ($index < $length) {
+//         $currentChar = $str[$index];
+//         if ($currentChar !== $char) {
+//             $result = "{$result}{$currentChar}";
+//         }
+//         $index++;
+//     }
+
+//     return $result;
+// }
+
+// $str = 'If I look back I am lost';
+// $char = 'I';
+// echo str_replace($char, '', $str);
+
+// function getEvenNumbersUpTo($num)
+// {
+//     $counter = 1;
+//     $result = '';
+
+//     while ($counter <= $num) {
+//         if ($counter % 2 === 0) {
+//             $result = $result . $counter . ',';
+//         }
+
+//         $counter += 1;
+//     }
+
+//     return $result;
+// }
+// print_r(getEvenNumbersUpTo(5));
+
+// function shouter($str)
+// {
+//     $length = strlen($str);
+//     $result = '';
+
+//     if ($length > 5) {
+//         $counter = 0;
+//         while ($counter !== 100) {
+//             $result = $result . $str;
+//             $counter += 1;
+//         }
+//     }
+//     elseif ($length > 0 && $length < 5) {
+//         $result = $str;
+//     } elseif ($length === 5) {
+//         $counter = 0;
+//         while ($counter !== 10) {
+//             $result = $result . $str;
+//             $counter += 1;
+//         }
+//     }
+//     return $result;
+// }
+// echo shouter('Hell');
+
+// function countChars($str, $char)
+// {
+//     $index = strlen($str) - 1;
+//     $result = 0;
+//     while ($index >= 0) {
+//         if ($str[$index] === $char) {
+//             $result += 1;
+//         }
+//         $index -= 1;
+//     }
+
+//     return $result;
+// }
+
+// function printNumbers($i)
+// {
+//     // BEGIN
+//     while ($i > 0) {
+//         print_r("{$i}\n");
+//         $i = $i - 1;
+//     }
+//     print_r('finished!');
+//     // END
+// }
+// printNumbers(3);
+
 // function generateAmount($quantity, $price)
 // {
 //     $user = $quantity ?: $price * 3;

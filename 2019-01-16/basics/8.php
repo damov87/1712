@@ -1,8 +1,6 @@
 <?php
 
-$age = 'hgg';
-$test = is_int($age);
-var_dump($test);
+$age = '-5';
 if ($age >=18 && $age <= 59) {
 	echo 'Вам еще работать и работать';
 } elseif ($age > 59) {

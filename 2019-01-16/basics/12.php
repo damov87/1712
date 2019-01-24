@@ -1,15 +1,20 @@
 <?php
 
-$day = 8;
+$day = 0;
 
 switch ($day) {    
-   case $day >= 1 && $day <= 5:
+   case 1:
+   case 2:
+   case 3:
+   case 4:
+   case 5:
      echo 'Это рабочий день';
      break;
-   case  $day >= 6 && $day <= 7:
+   case 6:
+   case 7:
      echo 'Это выходной день';
      break;
-   case !($day >= 1 && $day <= 7):
+   default:
      echo 'Неизвестный день';
      break;
 }

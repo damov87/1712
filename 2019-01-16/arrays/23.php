@@ -1,6 +1,6 @@
 <?php
 
-$number = "1234";
+$number = "12346";
 
 $sum = 0;
 

@@ -15,9 +15,14 @@ $arr = [
 	'Декабрь'
 ];
 
-$months = $arr[1];
-foreach ($arr as $key => $value) {
-	if ($key === 1) {
+// echo '<pre>';
+// var_dump($arr);
+// echo '</pre>';
+
+$months = $arr[date("n")];
+
+foreach ($arr as $value) {
+	if ($value == $months) {
 		echo '<b>' . $months . '</b>' . '<br>';
 	} else
 		echo $value . '<br>';

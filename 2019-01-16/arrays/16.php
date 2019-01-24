@@ -12,10 +12,11 @@ $arr = [
    9,
 ];
 
-// print_r(array_chunk ($arr, 3));
-
-// $str = '';
-// foreach ($arr as $value) {
-// 		$str .= $value;
-// }
-// var_dump($str);
+foreach ($arr as $value) {
+	if ($value % 3 !== 0) {
+		echo $value . ', ';
+	}
+	if ($value % 3 == 0) {
+		echo $value . '<br>';
+	}
+}

@@ -10,9 +10,10 @@ $arr = [
 	'Воскресенье'
 ];
 
-$day = $arr[1];
+$day = $arr[date("N")];
+
 foreach ($arr as $key => $value) {
-	if ($key === 1) {
+	if ($value == $day) {
 		echo '<i>' . $day . '</i>' . '<br>';
 	} else
 		echo $value . '<br>';

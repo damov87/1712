@@ -1,12 +1,12 @@
 <?php
 
-$age = '-5';
+$age = 'flksj';
 if ($age >=18 && $age <= 59) {
 	echo 'Вам еще работать и работать';
 } elseif ($age > 59) {
 	echo 'Вам пора на пенсию';
-} elseif ($age >= 0 && $age <= 17) {
-	echo 'Вам еще рано работать';
-} elseif ($age < 0 || $test === false) {
+} elseif (is_numeric($age) === false || $age < 0) {
 	echo 'Неизвестный возраст';	
+} elseif ($age === 0 || $age <= 17) {
+	echo 'Вам еще рано работать';
 }

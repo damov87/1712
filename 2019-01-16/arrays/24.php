@@ -1,5 +1,5 @@
 <?php
 
-$number = "67124372536542";
+$number = "4452158755745";
 
-echo substr_count($number, 2);
+echo substr_count($number, 5);

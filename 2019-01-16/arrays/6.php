@@ -6,8 +6,18 @@ $arr = [
 	'blue' => 'голубой',
 ];
 
-$en = array_keys($arr);
-$ru = array_values($arr);
+$en = array();
+foreach ($arr as $key => $value) {
+    $en[] = $key;
+}
+
+$ru = array();
+foreach ($arr as $key => $value) {
+    $ru[] = $value;
+}
+
+// $en = array_keys($arr);
+// $ru = array_values($arr);
 var_dump($en);
 echo "<br>";
 var_dump($ru);

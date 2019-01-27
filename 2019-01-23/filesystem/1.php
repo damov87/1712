@@ -1,8 +1,19 @@
 <?php
 
-function filesInDirectory($scan)
+function filesInDirectory($scan, &$results = array())
 {
-	return $files = scandir($scan);
+	$files = scandir($scan);
+    foreach($files as $key => $value){
+        $path = realpath($scan.DIRECTORY_SEPARATOR.$value);
+        if(!is_dir($path)) {
+            $results[] = $path;
+        } else if($value != "." && $value != ".." && $value != ".git") {
+            filesInDirectory($path, $results);
+            $results[] = $path;
+        }
+    }	
+    sort($results);
+    return $results;
 }
 
 echo '<pre>';

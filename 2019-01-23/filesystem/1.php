@@ -7,7 +7,7 @@ function filesInDirectory($scan, &$results = array())
         $path = realpath($scan.DIRECTORY_SEPARATOR.$value);
         if(!is_dir($path)) {
             $results[] = $path;
-        } else if($value != "." && $value != ".." && $value != ".git") {
+        } else if($value != '.' && $value != '..' && $value != '.git') {
             filesInDirectory($path, $results);
             $results[] = $path;
         }

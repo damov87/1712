@@ -19,29 +19,29 @@ function filesInDirectoryWithSort($scan, $sortDir = true)
 		// }
 
 		usort($directories, function ($a, $b) {
-	    return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
 		});
 		usort($files_list, function ($a, $b) {
-	    return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
 		});
 		foreach($directories as $directory){
-		   echo '<li class="folder">'.$directory.'</li>';
+		   echo '<li type="circle">'.$directory.'</li>';
 		}
 		foreach($files_list as $file_list){
-		   echo '<li class="file">'.$file_list.'</li>';
+		   echo '<li>'.$file_list.'</li>';
 		}
 	} elseif ($sortDir === false) {
 		$files = scandir($scan);
 		usort($files, function ($a, $b) {
-	    return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
-	});
+	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+		});
 		foreach($files as $files){
-		   echo '<li class="file">'.$files.'</li>';
+		   echo '<li>'.$files.'</li>';
 		}
 	}
 	
 }
 
 echo '<pre>';
-print_r(filesInDirectoryWithSort('../..', false));
+print_r(filesInDirectoryWithSort('../..', ));
 echo '</pre>';

@@ -8,5 +8,5 @@ $arr = [
 
 foreach($arr as $key => $value){
     //echo $key . ' — зарплата ' . $value . ' долларов.' . '<br>';
-    print_r("{$key} — зарплата {$value} долларов.<br>");
+    echo "{$key} — зарплата {$value} долларов.<br>";
 }

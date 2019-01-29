@@ -12,8 +12,8 @@ $arr = [
    9,
 ];
 
-$str = '';
+$str = '-';
 foreach ($arr as $value) {
-		$str .= $value;
+		$str .= $value . '-';
 }
-var_dump($str);
+echo $str;

@@ -1,7 +1,7 @@
 <?php
 
 $arr = [
-	1 => 'Понедельник',
+	'Понедельник',
 	'Вторник',
 	'Среда',
 	'Четверг',
@@ -10,11 +10,12 @@ $arr = [
 	'Воскресенье'
 ];
 
-$day = $arr[date("N")];
+$day = $arr[date("N") - 1];
 
 foreach ($arr as $key => $value) {
-	if ($value == $day) {
+	if ($value === $day) {
 		echo '<i>' . $day . '</i>' . '<br>';
-	} else
+	} else {
 		echo $value . '<br>';
+	}
 }

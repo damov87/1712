@@ -1,7 +1,7 @@
 <?php
 
 $arr = [
-	1 => 'Январь',
+	'Январь',
 	'Февраль',
 	'Март',
 	'Апрель',
@@ -15,15 +15,12 @@ $arr = [
 	'Декабрь'
 ];
 
-// echo '<pre>';
-// var_dump($arr);
-// echo '</pre>';
-
-$months = $arr[date("n")];
+$months = $arr[date("n") - 1];
 
 foreach ($arr as $value) {
-	if ($value == $months) {
+	if ($value === $months) {
 		echo '<b>' . $months . '</b>' . '<br>';
-	} else
+	} else {
 		echo $value . '<br>';
+	}
 }

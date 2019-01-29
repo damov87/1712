@@ -1,6 +1,8 @@
 <?php
 
 $a = 0;
+$a = (bool) $a;
 
-settype($a, 'boolean');
-var_dump($a); // значение будет false, так как в boolean false=0
+var_dump($a); // значение будет false, так как в boolean 0 = false
+echo '<br>';
+echo 'значение будет false, так как в boolean 0 = false';

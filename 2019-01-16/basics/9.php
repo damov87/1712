@@ -1,3 +1,4 @@
 <?php
 
-$day = 5;
+$day = rand(-200, 200);
+echo $day;

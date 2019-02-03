@@ -6,8 +6,9 @@ $operator = $_POST ['operator'];
 
 if ($b == 0 && ($operator === '/' || $operator === '%')){
     echo "Division by 0 is impossible!";
-}
-else {
+} elseif (is_numeric($b) === false || is_numeric($a) === false) {
+    echo "Entering values must be numbers!";
+} else {
     switch ($operator) {
         case '+':
             $result = $a + $b;

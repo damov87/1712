@@ -19,10 +19,10 @@ function filesInDirectoryWithSort($scan, $sortDir = true)
 		// }
 
 		usort($directories, function ($a, $b) {
-	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+	    	return mb_strlen($a, 'UTF-8') <=> mb_strlen($b, 'UTF-8');
 		});
 		usort($files_list, function ($a, $b) {
-	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+	    	return mb_strlen($a, 'UTF-8') <=> mb_strlen($b, 'UTF-8');
 		});
 		foreach($directories as $directory){
 		   echo '<li type="circle">'.$directory.'</li>';
@@ -33,7 +33,7 @@ function filesInDirectoryWithSort($scan, $sortDir = true)
 	} elseif ($sortDir === false) {
 		$files = scandir($scan);
 		usort($files, function ($a, $b) {
-	    	return mb_strlen($a, 'UTF-8') - mb_strlen($b, 'UTF-8');
+	    	return mb_strlen($a, 'UTF-8') <=> mb_strlen($b, 'UTF-8');
 		});
 		foreach($files as $files){
 		   echo '<li>'.$files.'</li>';

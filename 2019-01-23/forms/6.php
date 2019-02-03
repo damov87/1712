@@ -6,8 +6,9 @@ $str = array_filter($str);
 krsort($str);
 
 foreach ($str as $key => $val){
-    if ($key == 0) {
+    if ($key === 0) {
         echo ' ' . $val . '.';
-    } else
+    } else {
     echo $val . '.';
+    }
 }

@@ -14,12 +14,13 @@ function form(): string
     $result .= '<div class="form-group row">';
 
     foreach ($form['inputs'] as $input) {
-        $result .= prepareLabel($input['label'], $input['id']);
+        $result .= prepareLabel($input['label'], 'col-sm-2 col-form-label', $input['id']);
         $result .= '<div class="col-lg-7">';
         $result .= prepareInput($input);
         $result .= '</div>';
         $result .= '<br>';
     }
+
 
     $result .= '</div>';
     $result .= '</form>';
@@ -58,18 +59,13 @@ function prepareInput(array $input): string
     return $result;
 }
 
-/**
- * @param string|null $label
- * @param string|null $id
- * @return string
- */
-function prepareLabel(?string $label, ?string $id): string
+function prepareLabel(?string $label, ?string $class, ?string $id): string
 {
     if ($label === null) {
         return '';
     }
 
-    return sprintf('<label for="%s">%s</label>', $id, $label);
+    return sprintf('<label for="%s" class="%s">%s</label>', $id, $class, $label);
 }
 
 /**

@@ -4,10 +4,10 @@ $inputs = [
     [
         'type'        => 'text',
         'class'       => 'form-control',
-        'id'          => 'name',
+        'id'          => 'form_name',
         'name'        => 'name',
         'placeholder' => 'Василий Иванович Петренко',
-        'label'       => 'Логин',
+        'label'       => 'ФИО:',
         'value'       => null,
     ],
     [
@@ -16,7 +16,7 @@ $inputs = [
         'id'          => 'password',
         'name'        => 'password',
         'placeholder' => 'Введите пароль',
-        'label'       => 'Пароль',
+        'label'       => 'Пароль:',
         'value'       => null,
     ],
     [
@@ -30,8 +30,22 @@ $inputs = [
     ],
 ];
 
+$labels = [
+    [
+        'id'          => 'form_name',
+        'class'       => 'col-sm-2 col-form-label',
+        'label'       => 'ФИО:',
+    ],
+    [
+        'id'          => 'form_name',
+        'class'       => 'col-sm-2 col-form-label',
+        'label'       => 'Пароль:',
+    ],
+];
+
 return [
     'action' => 'form-process.php',
     'method' => 'post',
     'inputs' => $inputs,
+    'labels' => $labels,
 ];

@@ -13,7 +13,7 @@ $inputs = [
     [
         'type'        => 'password',
         'class'       => 'form-control',
-        'id'          => 'password',
+        'id'          => 'form_password',
         'name'        => 'password',
         'placeholder' => 'Введите пароль',
         'label'       => 'Пароль:',

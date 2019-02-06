@@ -10,19 +10,16 @@ function form(): string
     $result = '<div class="container">';
     $result .= '<div class="row col-lg-6 offset-lg-3 mt-3">';
 
-    $result .= sprintf('<form method="%s" action="%s">', $form['method'], $form['action']);
-    $result .= '<div class="form-group row">';
+    $result .= sprintf('<form method="%s" action="%s" style="width: 30rem;">', $form['method'], $form['action']);
 
     foreach ($form['inputs'] as $input) {
+    	$result .= '<div class="form-group row">';
         $result .= prepareLabel($input['label'], 'col-sm-2 col-form-label', $input['id']);
         $result .= '<div class="col-lg-7">';
         $result .= prepareInput($input);
-        $result .= '</div>';
-        $result .= '<br>';
+        $result .= '</div></div>';
     }
 
-
-    $result .= '</div>';
     $result .= '</form>';
     $result .= '</div></div>';
 

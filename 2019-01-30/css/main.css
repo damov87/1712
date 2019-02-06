@@ -1,0 +1,40 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+body {
+	background-image: url("../img/bg-lightl-904.jpg");
+}
+.center {
+	text-align: center;
+	padding-right: 8%;
+}
+.heading {
+    padding: 10px 0;
+    color: #11931b;
+    text-align: center;
+}
+li {
+    padding: 10px;
+    text-underline: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    font-weight: bold;
+}
+.home {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: black;
+    border: 1px solid #1eb80b;
+    font-family: verdana, serif;
+    margin-top: 20px;
+    z-index: 1000;
+}
+.home:hover {
+    background: #8db80b66;
+}

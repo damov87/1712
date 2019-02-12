@@ -8,7 +8,7 @@
   <title>Homework 30-01-2019</title>
 </head>
 <body>
-  <a class="home" href="../index.html">На главную</a>
+  <a class="home" href="../index.php">На главную</a>
   <div class="container col-lg-6 offset-lg-3">
     <h1 class="text-success text-center">Задания Codewars 30-01-2019</h1>
     <ul class="center" type="none">

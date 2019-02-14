@@ -58,6 +58,14 @@ function form(): string
     }
     $result .= '</fieldset>';
 
+    foreach ($form['select'] as $input) {
+        $result .= prepareSelect($input);
+    }
+    foreach ($form['options'] as $input) {
+        $result .= prepareOptions($input);
+    }
+    $result .= '</select>';
+
     foreach ($form['submit'] as $input) {
         $result .= '<div class="form-group row">';
         $result .= '<div class="col-sm-10">';
@@ -97,6 +105,41 @@ function prepareInput(array $input): string
         $result .= ' value="' . $input['value'] . '"';
     }
     $result .= '>';
+
+    return $result;
+}
+
+function prepareSelect(array $select): string
+{
+    $result = '<select';
+    if ($select['class'] !== null) {
+        $result .= ' class="' . $select['class'] . '"';
+    }
+    if ($select['name'] !== null) {
+        $result .= ' name="' . $select['name'] . '"';
+    }
+    if ($select['id'] !== null) {
+        $result .= ' id="' . $select['id'] . '"';
+    }
+    if ($select['size'] !== null) {
+        $result .= ' size="' . $select['size'] . '"';
+    }
+    $result .= '>';
+
+    return $result;
+}
+
+function prepareOptions(array $options): string
+{
+    $result = '<option';
+    if ($options['value'] !== null) {
+        $result .= ' value="' . $options['value'] . '"';
+    }
+    $result .= '>';
+    if ($options['label'] !== null) {
+        $result .= $options['label'];
+    }
+    $result .= '</option>';
 
     return $result;
 }

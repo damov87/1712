@@ -171,6 +171,33 @@ $submit = [
     ],
 ];
 
+$select = [
+    [
+        'class'       => 'custom-select margin',
+        'id'          => 'work',
+        'name'        => 'work',
+        'size'        => null,
+    ],
+];
+
+$options = [
+    [
+        'value'       => '0',
+        'label'       => 'Предпочтение работы:',
+    ],
+    [
+        'value'       => 'office',
+        'label'       => 'В офисе',
+    ],
+    [
+        'value'       => 'remotely',
+        'label'       => 'Удаленно',
+    ],
+    [
+        'value'       => 'trip',
+        'label'       => 'Командировки',
+    ],
+];
 
 // $labels = [
 //     [
@@ -194,5 +221,7 @@ return [
     'inputsRadio2' => $inputsRadio2,
     'inputsRadio3' => $inputsRadio3,
     'submit' => $submit,
+    'select' => $select,
+    'options' => $options,
     // 'labels' => $labels,
 ];

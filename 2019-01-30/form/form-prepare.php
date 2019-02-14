@@ -20,6 +20,14 @@ function form(): string
         $result .= '</div></div>';
     }
 
+    $result .= "<label for='skills'>Знания: </label><br>";
+    foreach ($form['inputsCheck'] as $input) {
+        $result .= '<div class="custom-control custom-checkbox">';
+        $result .= prepareInput($input);
+        $result .= prepareLabel($input['label'], 'custom-control-label', $input['id']);
+        $result .= '</div>';
+    }
+
     $result .= '</form>';
     $result .= '</div></div>';
 

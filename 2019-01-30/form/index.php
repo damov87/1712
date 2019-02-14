@@ -14,7 +14,7 @@
 
     <title><?php echo $title; ?></title>
 </head>
-<body style="background-color: #ced4da">
+<body>
 <?php
     echo $content;
     if (isset($_COOKIE['inputName'])) {

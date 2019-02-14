@@ -67,6 +67,99 @@ $inputsCheck = [
         'label'       => 'Java',
         'value'       => 'Java',
     ],
+];
+
+$inputsRadio = [
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'gender1',
+        'name'        => 'gender',
+        'placeholder' => null,
+        'label'       => 'Мужской',
+        'value'       => 'men',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'gender2',
+        'name'        => 'gender',
+        'placeholder' => null,
+        'label'       => 'Женский',
+        'value'       => 'women',
+    ],
+];
+
+$inputsRadio2 = [
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'transport1',
+        'name'        => 'transport',
+        'placeholder' => null,
+        'label'       => 'Общественный',
+        'value'       => 'public',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'transport2',
+        'name'        => 'transport',
+        'placeholder' => null,
+        'label'       => 'Личная машина',
+        'value'       => 'car',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'transport3',
+        'name'        => 'transport',
+        'placeholder' => null,
+        'label'       => 'Велосипед',
+        'value'       => 'bycicle',
+    ],
+];
+
+$inputsRadio3 = [
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'education1',
+        'name'        => 'education',
+        'placeholder' => null,
+        'label'       => 'Школа',
+        'value'       => 'school',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'education2',
+        'name'        => 'education',
+        'placeholder' => null,
+        'label'       => 'Университет (бакалавр)',
+        'value'       => 'university1',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'education3',
+        'name'        => 'education',
+        'placeholder' => null,
+        'label'       => 'Университет (специалист)',
+        'value'       => 'university2',
+    ],
+    [
+        'type'        => 'radio',
+        'class'       => 'custom-control-input',
+        'id'          => 'education4',
+        'name'        => 'education',
+        'placeholder' => null,
+        'label'       => 'Университет (магистр)',
+        'value'       => 'university3',
+    ],
+];
+
+$submit = [
     [
         'type'        => 'submit',
         'class'       => 'btn btn-primary',
@@ -77,6 +170,7 @@ $inputsCheck = [
         'value'       => 'Отправить форму',
     ],
 ];
+
 
 // $labels = [
 //     [
@@ -96,5 +190,9 @@ return [
     'method' => 'post',
     'inputs' => $inputs,
     'inputsCheck' => $inputsCheck,
+    'inputsRadio' => $inputsRadio,
+    'inputsRadio2' => $inputsRadio2,
+    'inputsRadio3' => $inputsRadio3,
+    'submit' => $submit,
     // 'labels' => $labels,
 ];

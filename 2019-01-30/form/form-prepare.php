@@ -20,12 +20,49 @@ function form(): string
         $result .= '</div></div>';
     }
 
-    $result .= "<label for='skills'>Знания: </label><br>";
+    $result .= "<hr><label for='skills'>Знания: </label><br>";
     foreach ($form['inputsCheck'] as $input) {
         $result .= '<div class="custom-control custom-checkbox">';
         $result .= prepareInput($input);
         $result .= prepareLabel($input['label'], 'custom-control-label', $input['id']);
         $result .= '</div>';
+    }
+
+    $result .= "<hr><label for='gender'>Пол: </label><br>";
+    $result .= '<fieldset class="form-group">';
+    foreach ($form['inputsRadio'] as $input) {
+        $result .= '<div class="custom-control custom-radio">';
+        $result .= prepareInput($input);
+        $result .= prepareLabel($input['label'], 'custom-control-label', $input['id']);
+        $result .= '</div>';
+    }
+    $result .= '</fieldset>';
+
+    $result .= "<hr><label for='gender'>Предпочитаемый транспорт: </label><br>";
+    $result .= '<fieldset class="form-group">';
+    foreach ($form['inputsRadio2'] as $input) {
+        $result .= '<div class="custom-control custom-radio">';
+        $result .= prepareInput($input);
+        $result .= prepareLabel($input['label'], 'custom-control-label', $input['id']);
+        $result .= '</div>';
+    }
+    $result .= '</fieldset>';
+
+    $result .= "<hr><label for='gender'>Образование: </label><br>";
+    $result .= '<fieldset class="form-group">';
+    foreach ($form['inputsRadio3'] as $input) {
+        $result .= '<div class="custom-control custom-radio">';
+        $result .= prepareInput($input);
+        $result .= prepareLabel($input['label'], 'custom-control-label', $input['id']);
+        $result .= '</div>';
+    }
+    $result .= '</fieldset>';
+
+    foreach ($form['submit'] as $input) {
+        $result .= '<div class="form-group row">';
+        $result .= '<div class="col-sm-10">';
+        $result .= prepareInput($input);
+        $result .= '</div></div>';
     }
 
     $result .= '</form>';

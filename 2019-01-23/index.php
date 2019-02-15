@@ -12,7 +12,7 @@
   <div class="container col-lg-6 offset-lg-3">
     <h1 class="text-success text-center">Файловая система</h1>
     <ul class="center" type="none">
-    <?php for ($i=1; $i <= 3; $i++) { ?>
+    <?php for ($i=1; $i <= 4; $i++) { ?>
       <li class="p-3 mb-2 bg-primary"><a class="text-white" href="filesystem/<?=$i?>.php">Задание №<?=$i?></a></li>
     <?php } ?>
     <h1 class="text-success text-center">Функции и формы</h1>

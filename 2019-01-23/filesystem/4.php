@@ -7,44 +7,59 @@
 
 function filesInDirectoryWithTypes($scan) // Пока что только подсчет количества каждого типа файлов без самой сортировки
 {
-		$files = scandir($scan);
-		$directories = [];
-	    $files_list  = [];
+	$files = scandir($scan);
+	$directories = [];
+    $files_list  = [];
 
-		foreach ($files as $file) {
-		      if (is_dir($scan . '/' . $file)) {
-		         $directories[] = $file;
-		      } else {
-		         $files_list[] = $file;
-		      }
+	foreach ($files as $file) {
+	      if (is_dir($scan . '/' . $file)) {
+	         $directories[] = $file;
+	      } else {
+	         $files_list[] = $file;
+	      }
+	}
+
+	foreach ($files_list as $key => $value) {
+		$myPathInfo = pathinfo($value);
+		if (isset($myPathInfo['extension']) === true) {
+			$ext[] = $myPathInfo['extension'];
 		}
+	}
 
-		foreach ($files_list as $key => $value) {
-			$myPathInfo = pathinfo($value);
-			if (isset($myPathInfo['extension']) === true) {
-				$ext[] = $myPathInfo['extension'];
-			}
+	function myArrayCombine($keys, $values)
+	{
+	    $result = [];
+	    foreach ($keys as $i => $k) {
+	        $result[$k][] = $values[$i];
+	    }
+	    return $result;
+	}
+	$ext2 = myArrayCombine($ext, $files_list);
+
+	// echo '<pre>';
+	// print_r($ext);
+	// print_r($files_list);
+	// print_r($ext2);
+	// echo '</pre>';
+
+	array_multisort(array_map('count', $ext2), SORT_DESC, $ext2);
+
+	// echo '<pre>';
+	// print_r($ext2);
+	// echo '</pre>';
+
+	foreach($directories as $directory){
+	   echo '<li type="circle">' . $directory . '</li>';
+	}
+
+	foreach($ext2 as $ext => $file) {
+		foreach($file as $key => $value) {
+			echo '<li>' . $value . '</li>';
 		}
-
-		echo '<pre>';
-		print_r($ext);
-		echo '</pre>';
-
-		$extCount = array_count_values($ext);
-		arsort($extCount);
-
-		echo '<pre>';
-		print_r($extCount);
-		echo '</pre>';
-
-		foreach($directories as $directory){
-		   echo '<li type="circle">'.$directory.'</li>';
-		}
-		foreach($files_list as $file_list){
-		   echo '<li>'.$file_list.'</li>';
-		}
+	}
 }
 
 echo '<pre>';
 print_r(filesInDirectoryWithTypes('../..'));
 echo '</pre>';
+

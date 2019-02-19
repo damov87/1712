@@ -8,7 +8,7 @@ $inputs = [
         'name'        => 'name',
         'placeholder' => 'Василий Иванович Петренко',
         'label'       => 'ФИО:',
-        'value'       => null,
+        'value'       =>  null,
     ],
     [
         'type'        => 'email',
@@ -17,7 +17,7 @@ $inputs = [
         'name'        => 'email',
         'placeholder' => 'Введите E-mail',
         'label'       => 'E-mail:',
-        'value'       => null,
+        'value'       =>  null,
     ],
     [
         'type'        => 'password',
@@ -26,7 +26,7 @@ $inputs = [
         'name'        => 'password',
         'placeholder' => 'Введите пароль',
         'label'       => 'Пароль:',
-        'value'       => null,
+        'value'       =>  null,
     ],
     [
         'type'        => 'text',
@@ -35,7 +35,7 @@ $inputs = [
         'name'        => 'phone',
         'placeholder' => 'Введите телефон',
         'label'       => 'Телефон:',
-        'value'       => null,
+        'value'       =>  null,
     ],
 ];
 
@@ -45,7 +45,8 @@ $inputsCheck = [
         'class'       => 'custom-control-input',
         'id'          => 'PHP',
         'name'        => 'skills',
-        'placeholder' => null,
+        'disabled'    =>  null,
+        'checked'     =>  null,
         'label'       => 'PHP',
         'value'       => 'PHP',
     ],
@@ -54,7 +55,8 @@ $inputsCheck = [
         'class'       => 'custom-control-input',
         'id'          => 'MySQL',
         'name'        => 'skills',
-        'placeholder' => null,
+        'disabled'    =>  null,
+        'checked'     =>  null,
         'label'       => 'MySQL',
         'value'       => 'MySQL',
     ],
@@ -63,7 +65,8 @@ $inputsCheck = [
         'class'       => 'custom-control-input',
         'id'          => 'Java',
         'name'        => 'skills',
-        'placeholder' => null,
+        'disabled'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Java',
         'value'       => 'Java',
     ],
@@ -75,7 +78,8 @@ $inputsRadio = [
         'class'       => 'custom-control-input',
         'id'          => 'gender1',
         'name'        => 'gender',
-        'placeholder' => null,
+        'required'    =>  '',
+        'checked'     =>  null,
         'label'       => 'Мужской',
         'value'       => 'men',
     ],
@@ -84,7 +88,8 @@ $inputsRadio = [
         'class'       => 'custom-control-input',
         'id'          => 'gender2',
         'name'        => 'gender',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Женский',
         'value'       => 'women',
     ],
@@ -96,7 +101,8 @@ $inputsRadio2 = [
         'class'       => 'custom-control-input',
         'id'          => 'transport1',
         'name'        => 'transport',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Общественный',
         'value'       => 'public',
     ],
@@ -105,7 +111,8 @@ $inputsRadio2 = [
         'class'       => 'custom-control-input',
         'id'          => 'transport2',
         'name'        => 'transport',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Личная машина',
         'value'       => 'car',
     ],
@@ -114,7 +121,8 @@ $inputsRadio2 = [
         'class'       => 'custom-control-input',
         'id'          => 'transport3',
         'name'        => 'transport',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  '',
         'label'       => 'Велосипед',
         'value'       => 'bycicle',
     ],
@@ -126,7 +134,8 @@ $inputsRadio3 = [
         'class'       => 'custom-control-input',
         'id'          => 'education1',
         'name'        => 'education',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Школа',
         'value'       => 'school',
     ],
@@ -135,7 +144,8 @@ $inputsRadio3 = [
         'class'       => 'custom-control-input',
         'id'          => 'education2',
         'name'        => 'education',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Университет (бакалавр)',
         'value'       => 'university1',
     ],
@@ -144,7 +154,8 @@ $inputsRadio3 = [
         'class'       => 'custom-control-input',
         'id'          => 'education3',
         'name'        => 'education',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Университет (специалист)',
         'value'       => 'university2',
     ],
@@ -153,7 +164,8 @@ $inputsRadio3 = [
         'class'       => 'custom-control-input',
         'id'          => 'education4',
         'name'        => 'education',
-        'placeholder' => null,
+        'required'    =>  null,
+        'checked'     =>  null,
         'label'       => 'Университет (магистр)',
         'value'       => 'university3',
     ],
@@ -163,10 +175,10 @@ $submit = [
     [
         'type'        => 'submit',
         'class'       => 'btn btn-primary',
-        'id'          => null,
-        'name'        => null,
-        'placeholder' => null,
-        'label'       => null,
+        'id'          =>  null,
+        'name'        =>  null,
+        'placeholder' =>  null,
+        'label'       =>  null,
         'value'       => 'Отправить форму',
     ],
 ];
@@ -176,7 +188,8 @@ $select = [
         'class'       => 'custom-select margin',
         'id'          => 'work',
         'name'        => 'work',
-        'size'        => null,
+        'size'        =>  null,
+        'multiple'    =>  null,
     ],
 ];
 
@@ -199,18 +212,81 @@ $options = [
     ],
 ];
 
-// $labels = [
-//     [
-//         'id'          => 'form_name',
-//         'class'       => 'col-sm-2 col-form-label',
-//         'label'       => 'ФИО:',
-//     ],
-//     [
-//         'id'          => 'form_name',
-//         'class'       => 'col-sm-2 col-form-label',
-//         'label'       => 'Пароль:',
-//     ],
-// ];
+$select2 = [
+    [
+        'class'       => 'custom-select margin',
+        'id'          => 'color',
+        'name'        => 'color',
+        'size'        => '8',
+        'multiple'    => '',
+    ],
+];
+
+$optionsGroup1 = [
+    [
+        'value'       => 'orange',
+        'label'       => 'Апельсиновый',
+    ],
+    [
+        'value'       => 'lemony',
+        'label'       => 'Лимонный',
+    ],
+    [
+        'value'       => 'peachy',
+        'label'       => 'Персиковый',
+    ],
+];
+
+$optionsGroup2 = [
+    [
+        'value'       => 'light',
+        'label'       => 'Светлый',
+    ],
+    [
+        'value'       => 'normal',
+        'label'       => 'Нормальный',
+    ],
+    [
+        'value'       => 'dark',
+        'label'       => 'Темный',
+    ],
+];
+
+$inputsCheck2 = [
+    [
+        'type'        => 'checkbox',
+        'class'       => 'custom-control-input',
+        'id'          => 'news',
+        'name'        => 'news',
+        'checked'     => 'checked',
+        'label'       => 'Подписаться на новости',
+        'value'       => '1',
+        'disabled'    =>  null,
+    ],
+];
+
+$inputsUpload = [
+    [
+        'type'        => 'file',
+        'class'       => 'custom-file-input',
+        'id'          => 'img',
+        'name'        => 'img',
+        'accept'      => 'image/png, image/jpeg',
+        'multiple'    => '',
+        'label'       => 'Выберите фотографии для загрузки',
+    ],
+    [
+        'type'        => 'file',
+        'class'       => 'custom-file-input',
+        'id'          => 'avatar',
+        'name'        => 'avatar',
+        'accept'      => 'image/png, image/jpeg',
+        'multiple'    =>  null,
+        'label'       => 'Выберите свой аватар',
+    ],
+];
+
+// echo "<pre>";var_dump($options2);exit;
 
 return [
     'action' => '',
@@ -223,5 +299,9 @@ return [
     'submit' => $submit,
     'select' => $select,
     'options' => $options,
-    // 'labels' => $labels,
+    'select2' => $select2,
+    'optionsGroup1' => $optionsGroup1,
+    'optionsGroup2' => $optionsGroup2,
+    'inputsCheck2' => $inputsCheck2,
+    'inputsUpload' => $inputsUpload,
 ];

@@ -10,6 +10,10 @@
 <body>
   <a class="home" href="../index.php">На главную</a>
   <div class="container col-lg-6 offset-lg-3">
+    <h1 class="text-success text-center">Форма в PHP</h1>
+    <ul class="center" type="none">
+      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="form/index.php">Вывод формы в PHP</a></li>
+    </ul>
     <h1 class="text-success text-center">Задания Codewars 30-01-2019</h1>
     <ul class="center" type="none">
     <?php for ($i=1; $i <= 20; $i++) { ?>

@@ -1,5 +1,4 @@
 <?php
-    include_once 'content.php';
     include_once 'form-prepare.php';
 ?>
 <!doctype html>
@@ -12,11 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href='css/main.css' rel='stylesheet' type='text/css'>
 
-    <title><?php echo $title; ?></title>
+    <title>Форма</title>
 </head>
 <body>
 <?php
-    echo $content;
     if (isset($_COOKIE['inputName'])) {
         echo '<h2 style="color: darkred">' .$_COOKIE['inputName'] . '</h2><br><br>';
         setcookie('inputName', 'DELETE IT', time());

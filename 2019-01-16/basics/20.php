@@ -1,6 +1,10 @@
 <?php
 
-$a = 20;
+// Приведите число 20 к типу boolean. Объясните результат.
 
-settype($a, 'boolean');
+$a = 20;
+$a = (bool) $a;
+
 var_dump($a); // все значения integer, кроме нуля, будут true
+echo '<br>';
+echo 'все значения integer, кроме нуля, будут true';

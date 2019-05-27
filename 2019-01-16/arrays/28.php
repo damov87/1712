@@ -1,5 +1,9 @@
-<table cellpadding="5" border = "1">
 <?php
+
+// Вывести таблицу умножения с помощью двух циклов for.
+
+echo '<table cellpadding="5" border="1">';
+
 for($i = 0; $i < 10; $i++) {
     echo'<tr>';
     for($j = 0; $j < 10; $j++)
@@ -21,5 +25,4 @@ for($i = 0; $i < 10; $i++) {
 			echo $s;
     }
 }
-?>
-</table>
+echo '</table>';

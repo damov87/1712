@@ -8,14 +8,13 @@
   <title>Homework 14-01-2019</title>
 </head>
 <body>
-  <a class="home" href="../index.html">На главную</a>
+  <a class="home" href="../index.php">На главную</a>
   <div class="container col-lg-6 offset-lg-3">
     <h1 class="text-success text-center">14/01/2019</h1>
     <ul class="center" type="none">
-      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="1.php">Задание №1</a></li>
-      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="2.php">Задание №2</a></li>
-      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="3.php">Задание №3</a></li>
-      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="4.php">Задание №4</a></li>
+    <?php for ($i=1; $i <= 4; $i++) { ?>
+      <li class="p-3 mb-2 bg-primary"><a class="text-white" href="<?=$i?>.php">Задание №<?=$i?></a></li>
+    <?php } ?>
     </ul>
   </div>
 </body>
